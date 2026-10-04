@@ -2,6 +2,7 @@
   
 > [English](README.en.md) | [Русский](README.md)  
   
+---
   
 ## Leningrad-2. Russian ZX Spectrum clone. Schematics and PCB.  
   
@@ -20,7 +21,7 @@
 После сборки и отладки были устранены мелкие недостатки.  
 Также по настойчивым просьбам друзей проект получил новое название "Аврора".  
   
-Свет увидела новая версия [2.01](Export/Leningrad%202%20128k%20SRAM%202.01%202025.html) [Схема](Export/Leningrad%202%20128k%20SRAM%202.01%202025.pdf) [Gerber](Gerber/Leningrad%202%20128k%20SRAM%202.01%202025%20gerber%20made%20in%20Italy.zip)  
+Свет увидела новая версия [iBOM 2.01](Export/Leningrad%202%20128k%20SRAM%202.01%202025.html)   [Схема](Export/Leningrad%202%20128k%20SRAM%202.01%202025.pdf)   [Gerber](Gerber/Leningrad%202%20128k%20SRAM%202.01%202025%20gerber%20made%20in%20Italy.zip)  
   
 ![](Foto/L2_Rev2.01.png)  
   
@@ -33,7 +34,7 @@
 ![](Foto/L2_2.01.jpg)  
   
 Перед выпуском следующей версии были добавлены индикатор питания и исправлен порт джойстика.  
-В производство отправилась версия [2.02](Export/Leningrad%202%20128k%20SRAM%202.02%202025.html) [Схема](Export/Leningrad%202%20128k%20SRAM%202.02%202025.pdf) [Gerber](Gerber/Leningrad%202%20128k%20SRAM%202.02%202025%20Gerber.zip)  
+В производство отправилась версия [iBOM 2.02](Export/Leningrad%202%20128k%20SRAM%202.02%202025.html)   [Схема](Export/Leningrad%202%20128k%20SRAM%202.02%202025.pdf)   [Gerber](Gerber/Leningrad%202%20128k%20SRAM%202.02%202025%20Gerber.zip)  
   
 ![](Foto/L2_Rev2.02.png)  
   
@@ -52,7 +53,7 @@
 ![](Jumpers/L2_Nemo_1_1.jpg)  
   
 Ну и в связи с тем, что у нас теперь есть полноценный арбитр, появилась возможность  
-добавить и плату расширения слотов до 3-х Немо и одного ZX-bus [Ёлка](Export/Back_L2_Nemo_x3_Spec_Ver2.1.html) [Схема](Export/Back_L2_Nemo_x3_Spec_Ver2.1.pdf) [Gerber](Gerber/Back_L2_Nemo_x3_Spec_Ver2.1_gerber.zip)  
+добавить и плату расширения слотов до 3-х Немо и одного ZX-bus [iBOM Ёлка](Export/Back_L2_Nemo_x3_Spec_Ver2.1.html)   [Схема](Export/Back_L2_Nemo_x3_Spec_Ver2.1.pdf)   [Gerber](Gerber/Back_L2_Nemo_x3_Spec_Ver2.1_gerber.zip)  
   
 ![](Foto/Back_L2_Nemo_x3_Spec_Ver2.1_PCB.png)  
   
@@ -65,7 +66,7 @@
 После небольших раздумий, была разведена новая плата расширения слотов.  
 На ней ZX-bus заменён на разъём от Ленинграда 2.  
 Также был добавлен разьём питания +5/+12в.  
-[Ёлка](Export/Back_L2_Nemo_x3_L2.html) [Схема](Export/Back_L2_Nemo_x3_L2.pdf) [Gerber](Gerber/Back_L2_Nemo_x3_L2_gerber.zip)  
+[iBOM Ёлка](Export/Back_L2_Nemo_x3_L2.html)   [Схема](Export/Back_L2_Nemo_x3_L2.pdf)   [Gerber](Gerber/Back_L2_Nemo_x3_L2_gerber.zip)  
   
 ![](Foto/Back_L2_Nemo_x3_L2_Ver3.1_PCB.png)  
   
@@ -78,9 +79,13 @@
 ![](Foto/L2_2.01++.jpg)  
   
 При этом платы ZX-bus можно подключать через переходники.  
-[Первый](Gerber/Nemo2ZX_BUS_v1.zip) [Второй](Gerber/Nemo2ZX_BUS_v2.zip)  
+[Первый](Gerber/Nemo2ZX_BUS_v1.zip)   [Второй](Gerber/Nemo2ZX_BUS_v2.zip)  
   
 ![](Foto/Nemo2ZX_BUS_v1+2.jpg)  
+  
+---
+  
+## Клавиатура  
   
 Так же были разведены 2 версии плат для клавиатуры.  
   
@@ -111,6 +116,21 @@
   
 ![](Foto/ZX-40Key-slim-2.png)  
   
+Для удобства запайки кнопок, можно распечатать рамку.  [Файл для печати](Export/AuroraKeys.stl)  
+Для маленькой платы рамка меньше. [Файл для печати](Export/AuroraKeys_small.stl)  
+  
+![](Foto/AuroraKeys-1.jpg)  
+
+![](Foto/AuroraKeys-2.jpg)  
+  
+---
+  
+## Корпус  
+  
+Корпус можно использовать от [PentoGraf-Pentagon-1024k](https://github.com/Alex-2-Graf/PentoGraf-Pentagon-1024k)  
+  
+![](Foto/19-finished.jpg) 
+  
 ---
   
 ## Сборка  
@@ -130,13 +150,19 @@ JP1, JP2 и JP3 замыкаются в случае установки VGA-ра
   
 ![](Jumpers/J12.jpg)  
   
+---
+  
 ## ПЗУ  
   
 ПЗУ для проекта находятся [тут](ROM)  
   
+---
+  
 ## VGA  
   
 Прошивка для RP2040-Zero находится [тут](VGA)  
+  
+---
   
 ## Рекомендуемые аксессуары  
   
@@ -144,6 +170,8 @@ JP1, JP2 и JP3 замыкаются в случае установки VGA-ра
 * [DivMMC](https://github.com/Alex-2-Graf/Leningrad2-DivMMC)
 * [LGT-Turbo-Sound-emulator](https://github.com/Alex-2-Graf/LGT-Turbo-Sound-emulator)
 * [ZX-EQ Nemo-bus Edition](https://github.com/Alex-2-Graf/ZX-EQ)
+   
+---
   
 ## Авторы и благодарности  
   
